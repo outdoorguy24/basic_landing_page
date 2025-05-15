@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Website</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="markdown-content" id="page-content">
+                <!-- Content will be inserted here -->
+                <p>Loading content...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
+
+    <script src="js/marked.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Update copyright year
+            const currentYear = new Date().getFullYear();
+            const footerYear = document.querySelector('footer p');
+            if (footerYear) {
+                footerYear.innerHTML = footerYear.innerHTML.replace('2023', currentYear);
+            }
+            
+            // Load and render the markdown content
+            fetch('content/pages/faq.md')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to load content');
+                    }
+                    return response.text();
+                })
+                .then(markdown => {
+                    // Convert markdown to HTML using marked.js
+                    document.getElementById('page-content').innerHTML = marked.parse(markdown);
+                })
+                .catch(error => {
+                    console.error('Error loading content:', error);
+                    document.getElementById('page-content').innerHTML = `
+                        <div class="error">
+                            <h2>Error Loading Content</h2>
+                            <p>Sorry, we couldn't load the page content. Please try again later.</p>
+                        </div>
+                    `;
+                });
+        });
+    </script>
+</body>
+</html> 

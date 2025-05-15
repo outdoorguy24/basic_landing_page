@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post | My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Website</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="blog-post">
+            <h1 id="post-title"><!-- Title will be inserted here --></h1>
+            <div class="meta">
+                <span id="post-date"><!-- Date will be inserted here --></span>
+            </div>
+            <div class="markdown-content" id="post-content">
+                <!-- Content will be inserted here -->
+            </div>
+            <div class="post-navigation">
+                <a href="blog.html">&larr; Back to Blog</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
+
+    <script src="js/marked.min.js"></script>
+    <script src="js/blog-post.js"></script>
+</body>
+</html> 
