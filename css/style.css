@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #fff;
-    color: #222;
+    background: #2d1b3c; /* deep purple */
+    color: #fff;
     margin: 0;
     padding: 0;
 }
@@ -21,7 +21,7 @@ body {
 
 /* Header */
 .main-header {
-    background: #fff;
+    background: #2d1b3c; /* deep purple */
     padding: 32px 0 0 0;
 }
 .header-flex {
@@ -35,6 +35,7 @@ body {
     line-height: 1.1;
     letter-spacing: 0.05em;
     margin-top: 4px;
+    color: #ffb300; /* yellow/gold */
 }
 .main-nav {
     display: flex;
@@ -42,7 +43,7 @@ body {
     gap: 32px;
 }
 .main-nav a {
-    color: #222;
+    color: #ffb300; /* yellow/gold */
     text-decoration: none;
     font-size: 1rem;
     font-weight: 400;
@@ -50,10 +51,10 @@ body {
     transition: color 0.2s;
 }
 .main-nav a:hover {
-    color: #a06eb5;
+    color: #00bfae; /* teal blue */
 }
 .login-btn {
-    background: #a06eb5;
+    background: #00bfae; /* hot pink */
     color: #fff !important;
     border: none;
     border-radius: 6px;
@@ -63,7 +64,8 @@ body {
     transition: background 0.2s;
 }
 .login-btn:hover {
-    background: #7d4e99;
+    background: #ffb300; /* yellow/gold */
+    color: #2d1b3c !important;
 }
 
 /* Main Content */
@@ -93,20 +95,21 @@ body {
     font-weight: 900;
     margin-bottom: 16px;
     letter-spacing: -1px;
+    color: #ffb300; /* yellow/gold */
 }
 .main-desc {
     font-size: 1rem;
-    color: #222;
+    color: #fff;
     margin-bottom: 28px;
     line-height: 1.5;
 }
 .free-link {
-    color: #a06eb5;
+    color: #e94f8b;
     text-decoration: underline;
     font-weight: 500;
 }
 .download-btn {
-    background: #a06eb5;
+    background: #00bfae; /* teal blue */
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -117,14 +120,15 @@ body {
     margin-top: 8px;
     transition: background 0.2s;
     display: inline-block;
+    box-shadow: 0 4px 16px 0 rgba(233,79,139,0.15);
 }
 .download-btn:hover {
-    background: #7d4e99;
+    background: #e94f8b; /* hot pink */
 }
 
 /* Footer */
 .main-footer {
-    background: #232422;
+    background: #1a0e23; /* deeper purple */
     color: #fff;
     padding: 0;
     margin-top: 64px;
@@ -153,7 +157,7 @@ body {
     color: #fff;
 }
 .footer-info a {
-    color: #a06eb5;
+    color: #ffb300;
     text-decoration: underline;
     font-size: 1rem;
 }
@@ -166,15 +170,16 @@ body {
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    background: #fff;
+    background: #e94f8b;
     object-fit: cover;
+    border: 2px solid #ffb300;
 }
 .footer-links {
     margin-top: 8px;
     font-size: 0.95rem;
 }
 .footer-links a {
-    color: #fff;
+    color: #00bfae;
     text-decoration: underline;
     margin: 0 4px;
 }
@@ -346,4 +351,8 @@ button:hover {
 }
 @keyframes spin-gear {
   100% { transform: rotate(360deg); }
+}
+
+button, .download-btn {
+    font-family: 'Poppins', sans-serif;
 } 
