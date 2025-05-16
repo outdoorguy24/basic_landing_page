@@ -1,6 +1,6 @@
 # About My Website
 
-Welcome to my personal website! This site was built as a simple static site using HTML, CSS, and JavaScript, with markdown for content.
+Welcome to my personal website! This site is show off my coding ability (with the help of AI). I want to create a mobile iOS app that retains simple, rustic vibe specifically for men. 
 
 ## About Me
 
