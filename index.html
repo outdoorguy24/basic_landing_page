@@ -3,42 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Simple Habits</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">My Website</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo">ALEX<br>STARR<br></div>
+            <nav class="main-nav">
+                <a href="#">Podcast</a>
+                <a href="#">YouTube Course</a>
+                <a href="#">FAQ</a>
+                <a href="#" class="login-btn">Course Login</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <h1>Welcome to My Website</h1>
-            <p>A simple static site with markdown support</p>
-        </section>
-
-        <section class="content">
-            <h2>Latest Posts</h2>
-            <div class="blog-preview" id="latest-posts">
-                <!-- Blog posts will be loaded here by JavaScript -->
-            </div>
-        </section>
+    <main class="main-content">
+        <div class="center-content">
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Wolf head (simplified, stylized) -->
+                <ellipse cx="60" cy="80" rx="40" ry="35" fill="#ddd" stroke="#222" stroke-width="3"/>
+                <ellipse cx="40" cy="50" rx="12" ry="18" fill="#ddd" stroke="#222" stroke-width="3"/>
+                <ellipse cx="80" cy="50" rx="12" ry="18" fill="#ddd" stroke="#222" stroke-width="3"/>
+                <ellipse cx="60" cy="90" rx="18" ry="10" fill="#fff" stroke="#222" stroke-width="2"/>
+                <ellipse cx="50" cy="80" rx="4" ry="6" fill="#222"/>
+                <ellipse cx="70" cy="80" rx="4" ry="6" fill="#222"/>
+                <ellipse cx="60" cy="100" rx="6" ry="3" fill="#222"/>
+                <!-- Gear (for animation) -->
+                <g id="gear" style="transform-origin:60px 60px;">
+                  <circle cx="60" cy="60" r="14" fill="#a06eb5"/>
+                  <g stroke="#a06eb5" stroke-width="4">
+                    <line x1="60" y1="42" x2="60" y2="32"/>
+                    <line x1="60" y1="78" x2="60" y2="88"/>
+                    <line x1="42" y1="60" x2="32" y2="60"/>
+                    <line x1="78" y1="60" x2="88" y2="60"/>
+                    <line x1="48" y1="48" x2="40" y2="40"/>
+                    <line x1="72" y1="48" x2="80" y2="40"/>
+                    <line x1="48" y1="72" x2="40" y2="80"/>
+                    <line x1="72" y1="72" x2="80" y2="80"/>
+                  </g>
+                </g>
+              </svg>             <h1 class="main-title">BUILDING WITH AI</h1>
+            <p class="main-desc">
+                This page will be proof that I can build things with AI. For <a href="#" class="free-link">free</a>.<br>
+                Pretty neat, right?<br>
+                I thought so too.
+            </p>
+            <a href="#" class="download-btn">See What I Built</a>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2023 My Website. All rights reserved.</p>
+    <footer class="main-footer">
+        <div class="footer-flex container">
+            <div class="footer-illustration">
+                <img src="footer-art.jpg" alt="Footer Illustration" style="width:180px; height:120px; object-fit:cover;">
+            </div>
+            <div class="footer-info">
+                <p>Questions? Me too. Best of luck.<br>
+                <a href="#">Check out my FAQ page.</a></p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Email"><img src="https://placehold.co/32x32?text=E" alt="Email"></a>
+                    <a href="#" aria-label="YouTube"><img src="https://placehold.co/32x32?text=YT" alt="YouTube"></a>
+                    <a href="#" aria-label="Instagram"><img src="https://placehold.co/32x32?text=IG" alt="Instagram"></a>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Terms</a> | <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
     </footer>
-
-    <script src="js/marked.min.js"></script>
-    <script src="js/main.js"></script>
 </body>
-</html> 
+</html>  
